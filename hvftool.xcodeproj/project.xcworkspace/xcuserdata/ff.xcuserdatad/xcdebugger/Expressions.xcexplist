@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "block_erase_confirm:cfi-flash-operations.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(mappedfile_backend_o *)cfidev-&gt;parent_clazz.backend">
+            </PersistentString>
+            <PersistentString
+               value = "(char *)cfidev-&gt;flash_memory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "dump_paging_level:vmm.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "pg[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vmm_mmio_handler:vmm.c">
+      </ContextState>
+      <ContextState
+         contextName = "vobjects_populate_fdt:vobjects-db.c">
+      </ContextState>
+      <ContextState
+         contextName = "vmm_gva_to_gpa:vmm.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "pg[index]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vobject_instantiate:vobject.c">
+      </ContextState>
+      <ContextState
+         contextName = "gic_redist_mmio_handler:gic-v3.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "irqs[base_irq+irq]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "pipe_backend_create:pipe_backend.c">
+      </ContextState>
+      <ContextState
+         contextName = "context_break_on_any_exception:vcore_run.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "code[EMULATION_BRK_INDEX]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "hostmem_backend_instantiate:hostmem.c">
+      </ContextState>
+      <ContextState
+         contextName = "mappedf_backend_instantiate:mapped-file.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char *)parameters-&gt;ptr_value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vcore_run:vcore_run.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "hvftool_config">
+            </PersistentString>
+            <PersistentString
+               value = "code[0]">
+            </PersistentString>
+            <PersistentString
+               value = "code[1]">
+            </PersistentString>
+            <PersistentString
+               value = "code[2]">
+            </PersistentString>
+            <PersistentString
+               value = "context-&gt;exception_table[0x200/4]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "fdt_generator:pl011.c">
+      </ContextState>
+      <ContextState
+         contextName = "vcore_init:vcore.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "hvftool_config">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "loader_parse_macho_into_vm:loader.c">
+      </ContextState>
+      <ContextState
+         contextName = "vmm_inject_fdt:vmm.c">
+      </ContextState>
+      <ContextState
+         contextName = "cfi_create_device:cfi-flash.c">
+      </ContextState>
+      <ContextState
+         contextName = "is_instruction_of_interest:vcore_run.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "((instruction &gt;&gt; 6) &amp; 0x7FFF)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vcore_print_sys_regs:vcore_info.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "sys_regs_metadata">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "buffer_confirm:cfi-flash-operations.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char *)cfidev-&gt;flash_memory">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "fdt_generator:ram.c">
+      </ContextState>
+      <ContextState
+         contextName = "handler:pl011.c">
+      </ContextState>
+      <ContextState
+         contextName = "gic_dist_mmio_handler:gic-v3.c">
+      </ContextState>
+      <ContextState
+         contextName = "vcore_invoke_setter:vcore.c">
+      </ContextState>
+      <ContextState
+         contextName = "TTBR0_EL3_write:vcore_emulate.c">
+      </ContextState>
+      <ContextState
+         contextName = "vobjects_find_byname:vobjects-db.c">
+      </ContextState>
+      <ContextState
+         contextName = "update_value:parameters.c">
+      </ContextState>
+      <ContextState
+         contextName = "fdt_generator:gic-v3.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(gic_vobject_t *)vobj">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "fdt_patch:main.c">
+      </ContextState>
+      <ContextState
+         contextName = "vcore_get_current_el:vcore.c">
+      </ContextState>
+      <ContextState
+         contextName = "handle_pc_in_exception_table:vcore_run.c">
+      </ContextState>
+      <ContextState
+         contextName = "vcore_interactive_debug:vcore_debuging.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(uint64_t)symbolic_location">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "initialize:secure_ram.c">
+      </ContextState>
+      <ContextState
+         contextName = "parse_options:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "argv[i+1]">
+            </PersistentString>
+            <PersistentString
+               value = "(stream_backend *)dev-&gt;backend">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "main:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "hvftool_config">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "parameter_lookup:parameters.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "parameters[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "initialize:ram.c">
+      </ContextState>
+      <ContextState
+         contextName = "fdt_generator:fxied-clock.c">
+      </ContextState>
+      <ContextState
+         contextName = "populate_emulation_code:vcore_run.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "code[i]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "mmio_lookup:mmio.c">
+      </ContextState>
+      <ContextState
+         contextName = "fdt_wrap:fdt.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(char*)&amp;data[15]">
+            </PersistentString>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "vcore_emulte_el3:vcore_emulate.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "*instruction &amp; tlbi_mask">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "devices_instantiate:devices.c">
+      </ContextState>
+      <ContextState
+         contextName = "vobject_register_mmio:vobject.c">
+      </ContextState>
+      <ContextState
+         contextName = "vmm_get_hostpointer_for:vmm.c">
+      </ContextState>
+      <ContextState
+         contextName = "create_device:pl011.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(pipe_backend_t *)dev-&gt;backend">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "loader_parse_symbols:loader.c">
+      </ContextState>
+      <ContextState
+         contextName = "cfi_mmio_handler:cfi-flash.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "(uint64_t )data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "loader_disassemble_at:loader.c">
+      </ContextState>
+      <ContextState
+         contextName = "mmio_assign_free:mmio.c">
+      </ContextState>
+      <ContextState
+         contextName = "initialize:pl011.c">
+      </ContextState>
+      <ContextState
+         contextName = "loader_load_all:loader.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "hvftool_config">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

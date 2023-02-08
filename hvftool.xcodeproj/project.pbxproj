@@ -1,0 +1,564 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A50062A428F415B2004D6362 /* gic-v3.c in Sources */ = {isa = PBXBuildFile; fileRef = A50062A328F415B2004D6362 /* gic-v3.c */; };
+		A52DFA1928CF309E002E85F9 /* vobject.c in Sources */ = {isa = PBXBuildFile; fileRef = A52DFA1828CF309E002E85F9 /* vobject.c */; };
+		A5375D4F28CF986F00AE59CD /* parameters.c in Sources */ = {isa = PBXBuildFile; fileRef = A5375D4E28CF986F00AE59CD /* parameters.c */; };
+		A53E0A4028C24164001F6566 /* libfdt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E0A3F28C24164001F6566 /* libfdt.a */; };
+		A53E0A4228C5DE5A001F6566 /* ram.c in Sources */ = {isa = PBXBuildFile; fileRef = A53E0A4128C5DE5A001F6566 /* ram.c */; };
+		A53E0A4428C5E4F8001F6566 /* mapped-file.c in Sources */ = {isa = PBXBuildFile; fileRef = A53E0A4328C5E4F8001F6566 /* mapped-file.c */; };
+		A5425D83298BFECC0034FA8D /* secure_ram.c in Sources */ = {isa = PBXBuildFile; fileRef = A5425D82298BFECC0034FA8D /* secure_ram.c */; };
+		A5425D86298D159D0034FA8D /* vcore_emulate.c in Sources */ = {isa = PBXBuildFile; fileRef = A5425D85298D159D0034FA8D /* vcore_emulate.c */; };
+		A54883E328AE9D1F00F7AC34 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = A54883E228AE9D1F00F7AC34 /* main.c */; };
+		A54ACFBA28D32852001E912A /* hostcpu.c in Sources */ = {isa = PBXBuildFile; fileRef = A54ACFB928D32852001E912A /* hostcpu.c */; };
+		A54ACFBC28D33374001E912A /* fdt.c in Sources */ = {isa = PBXBuildFile; fileRef = A54ACFBB28D33374001E912A /* fdt.c */; };
+		A56AB39028CC91D600808445 /* fxied-clock.c in Sources */ = {isa = PBXBuildFile; fileRef = A56AB38F28CC91D600808445 /* fxied-clock.c */; };
+		A56B36C828C65FF400199ECE /* cfi-flash.c in Sources */ = {isa = PBXBuildFile; fileRef = A56B36C728C65FF400199ECE /* cfi-flash.c */; };
+		A58C685E28CB3160001F7455 /* sysinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = A58C685D28CB3160001F7455 /* sysinfo.c */; };
+		A58C686128CB579E001F7455 /* cpu.c in Sources */ = {isa = PBXBuildFile; fileRef = A58C686028CB579E001F7455 /* cpu.c */; };
+		A59850B128B8D8F6007CC0E1 /* loader.c in Sources */ = {isa = PBXBuildFile; fileRef = A59850B028B8D8F6007CC0E1 /* loader.c */; };
+		A59850B728B8E592007CC0E1 /* vmm.c in Sources */ = {isa = PBXBuildFile; fileRef = A59850B628B8E592007CC0E1 /* vmm.c */; };
+		A59850BA28BAA0E6007CC0E1 /* vcore.c in Sources */ = {isa = PBXBuildFile; fileRef = A59850B928BAA0E6007CC0E1 /* vcore.c */; };
+		A59BA00428BFB4EE0078337B /* pl011.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA00328BFB4EE0078337B /* pl011.c */; };
+		A59BA00A28BFB7070078337B /* factories-db.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA00928BFB7070078337B /* factories-db.c */; };
+		A59BA00D28BFBBAB0078337B /* mmio.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA00C28BFBBAB0078337B /* mmio.c */; };
+		A59BA01028BFBE960078337B /* vobjects-db.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA00F28BFBE960078337B /* vobjects-db.c */; };
+		A59BA03A28C0A1CF0078337B /* pipe.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA03928C0A1CF0078337B /* pipe.c */; };
+		A59BA03C28C0D2B10078337B /* backends.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA03B28C0D2B10078337B /* backends.c */; };
+		A59BA04028C104CD0078337B /* stdio.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA03F28C104CD0078337B /* stdio.c */; };
+		A59BA04328C1664E0078337B /* vcore_debuging.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA04228C1664E0078337B /* vcore_debuging.c */; };
+		A59BA04628C1688A0078337B /* vcore_run.c in Sources */ = {isa = PBXBuildFile; fileRef = A59BA04528C1688A0078337B /* vcore_run.c */; };
+		A5B9B05F28B7559600F28286 /* vcore_info.c in Sources */ = {isa = PBXBuildFile; fileRef = A5B9B05E28B7559600F28286 /* vcore_info.c */; };
+		A5D0140028C611E30011BBC1 /* hostmem.c in Sources */ = {isa = PBXBuildFile; fileRef = A5D013FF28C611E30011BBC1 /* hostmem.c */; };
+		A5E25CA428C8F7D100375AC8 /* psci.c in Sources */ = {isa = PBXBuildFile; fileRef = A5E25CA328C8F7D100375AC8 /* psci.c */; };
+		A5E25CA728C8F97F00375AC8 /* smc.c in Sources */ = {isa = PBXBuildFile; fileRef = A5E25CA628C8F97F00375AC8 /* smc.c */; };
+		A5FA420728C7A02000233CFB /* cfi-flash-operations.c in Sources */ = {isa = PBXBuildFile; fileRef = A5FA420628C7A02000233CFB /* cfi-flash-operations.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A54883DD28AE9D1F00F7AC34 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A50062A328F415B2004D6362 /* gic-v3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "gic-v3.c"; sourceTree = "<group>"; };
+		A51B54722993A3B600C214BB /* bit_operations.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bit_operations.h; sourceTree = "<group>"; };
+		A52DFA1828CF309E002E85F9 /* vobject.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vobject.c; sourceTree = "<group>"; };
+		A5375D4C28CF358B00AE59CD /* fdt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fdt.h; sourceTree = "<group>"; };
+		A5375D4D28CF981A00AE59CD /* parameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = parameters.h; sourceTree = "<group>"; };
+		A5375D4E28CF986F00AE59CD /* parameters.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = parameters.c; sourceTree = "<group>"; };
+		A53E0A3F28C24164001F6566 /* libfdt.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfdt.a; path = ../dtcx/libfdt/libfdt.a; sourceTree = "<group>"; };
+		A53E0A4128C5DE5A001F6566 /* ram.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ram.c; sourceTree = "<group>"; };
+		A53E0A4328C5E4F8001F6566 /* mapped-file.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "mapped-file.c"; sourceTree = "<group>"; };
+		A5425D81298BFECC0034FA8D /* secure_ram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = secure_ram.h; sourceTree = "<group>"; };
+		A5425D82298BFECC0034FA8D /* secure_ram.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = secure_ram.c; sourceTree = "<group>"; };
+		A5425D84298D159D0034FA8D /* vcore_emulate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vcore_emulate.h; sourceTree = "<group>"; };
+		A5425D85298D159D0034FA8D /* vcore_emulate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vcore_emulate.c; sourceTree = "<group>"; };
+		A54883DF28AE9D1F00F7AC34 /* hvftool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hvftool; sourceTree = BUILT_PRODUCTS_DIR; };
+		A54883E228AE9D1F00F7AC34 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		A54883E928AFC56100F7AC34 /* hvftool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hvftool.entitlements; sourceTree = "<group>"; };
+		A54ACFB928D32852001E912A /* hostcpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hostcpu.c; sourceTree = "<group>"; };
+		A54ACFBB28D33374001E912A /* fdt.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = fdt.c; sourceTree = "<group>"; };
+		A54ACFBD28D449A3001E912A /* hvf_internals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hvf_internals.h; sourceTree = "<group>"; };
+		A56AB38F28CC91D600808445 /* fxied-clock.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "fxied-clock.c"; sourceTree = "<group>"; };
+		A56B36C728C65FF400199ECE /* cfi-flash.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "cfi-flash.c"; sourceTree = "<group>"; };
+		A58C685C28CB3160001F7455 /* sysinfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sysinfo.h; sourceTree = "<group>"; };
+		A58C685D28CB3160001F7455 /* sysinfo.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sysinfo.c; sourceTree = "<group>"; };
+		A58C686028CB579E001F7455 /* cpu.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = cpu.c; sourceTree = "<group>"; };
+		A59850AF28B8D8F6007CC0E1 /* loader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = loader.h; sourceTree = "<group>"; };
+		A59850B028B8D8F6007CC0E1 /* loader.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = loader.c; sourceTree = "<group>"; };
+		A59850B228B8D935007CC0E1 /* vmm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vmm.h; sourceTree = "<group>"; };
+		A59850B328B8D9C8007CC0E1 /* trace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = trace.h; sourceTree = "<group>"; };
+		A59850B628B8E592007CC0E1 /* vmm.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vmm.c; sourceTree = "<group>"; };
+		A59850B828BAA0E6007CC0E1 /* vcore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vcore.h; sourceTree = "<group>"; };
+		A59850B928BAA0E6007CC0E1 /* vcore.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vcore.c; sourceTree = "<group>"; };
+		A59B9FFE28BDF9F70078337B /* hvftool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hvftool.h; sourceTree = "<group>"; };
+		A59BA00328BFB4EE0078337B /* pl011.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pl011.c; sourceTree = "<group>"; };
+		A59BA00928BFB7070078337B /* factories-db.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "factories-db.c"; sourceTree = "<group>"; };
+		A59BA00B28BFBBAB0078337B /* mmio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mmio.h; sourceTree = "<group>"; };
+		A59BA00C28BFBBAB0078337B /* mmio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = mmio.c; sourceTree = "<group>"; };
+		A59BA00E28BFBE960078337B /* vobjects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vobjects.h; sourceTree = "<group>"; };
+		A59BA00F28BFBE960078337B /* vobjects-db.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "vobjects-db.c"; sourceTree = "<group>"; };
+		A59BA03728C0A0050078337B /* backends.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = backends.h; sourceTree = "<group>"; };
+		A59BA03928C0A1CF0078337B /* pipe.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pipe.c; sourceTree = "<group>"; };
+		A59BA03B28C0D2B10078337B /* backends.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = backends.c; sourceTree = "<group>"; };
+		A59BA03F28C104CD0078337B /* stdio.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = stdio.c; sourceTree = "<group>"; };
+		A59BA04228C1664E0078337B /* vcore_debuging.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vcore_debuging.c; sourceTree = "<group>"; };
+		A59BA04528C1688A0078337B /* vcore_run.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vcore_run.c; sourceTree = "<group>"; };
+		A5B9B05E28B7559600F28286 /* vcore_info.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vcore_info.c; sourceTree = "<group>"; };
+		A5B9B06128B7595200F28286 /* vcore_info.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vcore_info.h; sourceTree = "<group>"; };
+		A5D013FF28C611E30011BBC1 /* hostmem.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = hostmem.c; sourceTree = "<group>"; };
+		A5E25CA328C8F7D100375AC8 /* psci.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = psci.c; sourceTree = "<group>"; };
+		A5E25CA528C8F97F00375AC8 /* smc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = smc.h; sourceTree = "<group>"; };
+		A5E25CA628C8F97F00375AC8 /* smc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = smc.c; sourceTree = "<group>"; };
+		A5FA420628C7A02000233CFB /* cfi-flash-operations.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "cfi-flash-operations.c"; sourceTree = "<group>"; };
+		A5FA420828C7A17D00233CFB /* cfi-flash-internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "cfi-flash-internal.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A54883DC28AE9D1F00F7AC34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53E0A4028C24164001F6566 /* libfdt.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A53E0A3E28C24164001F6566 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A53E0A3F28C24164001F6566 /* libfdt.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A53E0A4528C5E563001F6566 /* vobjects */ = {
+			isa = PBXGroup;
+			children = (
+				A53E0A4628C5E590001F6566 /* backends */,
+				A577DFA228CA051400F41D28 /* factories */,
+				A59BA00E28BFBE960078337B /* vobjects.h */,
+				A59BA00F28BFBE960078337B /* vobjects-db.c */,
+				A59BA00928BFB7070078337B /* factories-db.c */,
+				A52DFA1828CF309E002E85F9 /* vobject.c */,
+				A5375D4C28CF358B00AE59CD /* fdt.h */,
+				A5375D4D28CF981A00AE59CD /* parameters.h */,
+				A5375D4E28CF986F00AE59CD /* parameters.c */,
+				A54ACFBB28D33374001E912A /* fdt.c */,
+			);
+			path = vobjects;
+			sourceTree = "<group>";
+		};
+		A53E0A4628C5E590001F6566 /* backends */ = {
+			isa = PBXGroup;
+			children = (
+				A59BA03728C0A0050078337B /* backends.h */,
+				A59BA03B28C0D2B10078337B /* backends.c */,
+				A59BA03928C0A1CF0078337B /* pipe.c */,
+				A59BA03F28C104CD0078337B /* stdio.c */,
+				A53E0A4328C5E4F8001F6566 /* mapped-file.c */,
+				A5D013FF28C611E30011BBC1 /* hostmem.c */,
+				A54ACFB928D32852001E912A /* hostcpu.c */,
+			);
+			path = backends;
+			sourceTree = "<group>";
+		};
+		A53E0A4728C5E5C1001F6566 /* vmm */ = {
+			isa = PBXGroup;
+			children = (
+				A59850B628B8E592007CC0E1 /* vmm.c */,
+				A59850B228B8D935007CC0E1 /* vmm.h */,
+				A59850B828BAA0E6007CC0E1 /* vcore.h */,
+				A59850B928BAA0E6007CC0E1 /* vcore.c */,
+				A59BA04528C1688A0078337B /* vcore_run.c */,
+				A5B9B06128B7595200F28286 /* vcore_info.h */,
+				A5B9B05E28B7559600F28286 /* vcore_info.c */,
+				A59BA04228C1664E0078337B /* vcore_debuging.c */,
+				A59BA00B28BFBBAB0078337B /* mmio.h */,
+				A59BA00C28BFBBAB0078337B /* mmio.c */,
+				A5E25CA528C8F97F00375AC8 /* smc.h */,
+				A5E25CA628C8F97F00375AC8 /* smc.c */,
+				A54ACFBD28D449A3001E912A /* hvf_internals.h */,
+				A5425D84298D159D0034FA8D /* vcore_emulate.h */,
+				A5425D85298D159D0034FA8D /* vcore_emulate.c */,
+			);
+			path = vmm;
+			sourceTree = "<group>";
+		};
+		A54883D628AE9D1F00F7AC34 = {
+			isa = PBXGroup;
+			children = (
+				A54883E128AE9D1F00F7AC34 /* hvftool */,
+				A54883E028AE9D1F00F7AC34 /* Products */,
+				A53E0A3E28C24164001F6566 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A54883E028AE9D1F00F7AC34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A54883DF28AE9D1F00F7AC34 /* hvftool */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A54883E128AE9D1F00F7AC34 /* hvftool */ = {
+			isa = PBXGroup;
+			children = (
+				A58C685F28CB3D2F001F7455 /* utils */,
+				A53E0A4728C5E5C1001F6566 /* vmm */,
+				A53E0A4528C5E563001F6566 /* vobjects */,
+				A54883E928AFC56100F7AC34 /* hvftool.entitlements */,
+				A54883E228AE9D1F00F7AC34 /* main.c */,
+				A59850B028B8D8F6007CC0E1 /* loader.c */,
+				A59850AF28B8D8F6007CC0E1 /* loader.h */,
+				A59850B328B8D9C8007CC0E1 /* trace.h */,
+				A59B9FFE28BDF9F70078337B /* hvftool.h */,
+				A51B54722993A3B600C214BB /* bit_operations.h */,
+			);
+			path = hvftool;
+			sourceTree = "<group>";
+		};
+		A577DFA228CA051400F41D28 /* factories */ = {
+			isa = PBXGroup;
+			children = (
+				A5E25CA328C8F7D100375AC8 /* psci.c */,
+				A59BA00328BFB4EE0078337B /* pl011.c */,
+				A53E0A4128C5DE5A001F6566 /* ram.c */,
+				A5425D81298BFECC0034FA8D /* secure_ram.h */,
+				A5425D82298BFECC0034FA8D /* secure_ram.c */,
+				A58C686028CB579E001F7455 /* cpu.c */,
+				A56B36C728C65FF400199ECE /* cfi-flash.c */,
+				A5FA420628C7A02000233CFB /* cfi-flash-operations.c */,
+				A5FA420828C7A17D00233CFB /* cfi-flash-internal.h */,
+				A56AB38F28CC91D600808445 /* fxied-clock.c */,
+				A50062A328F415B2004D6362 /* gic-v3.c */,
+			);
+			path = factories;
+			sourceTree = "<group>";
+		};
+		A58C685F28CB3D2F001F7455 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				A58C685D28CB3160001F7455 /* sysinfo.c */,
+				A58C685C28CB3160001F7455 /* sysinfo.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A53E0A2828C23E12001F6566 /* fdtlib */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "EXTRA_CFLAGS==-Wno-sign-compare $(ACTION)";
+			buildConfigurationList = A53E0A2928C23E12001F6566 /* Build configuration list for PBXLegacyTarget "fdtlib" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
+			dependencies = (
+			);
+			name = fdtlib;
+			passBuildSettingsInEnvironment = 1;
+			productName = fdtlib;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		A54883DE28AE9D1F00F7AC34 /* hvftool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54883E628AE9D1F00F7AC34 /* Build configuration list for PBXNativeTarget "hvftool" */;
+			buildPhases = (
+				A54883DB28AE9D1F00F7AC34 /* Sources */,
+				A54883DC28AE9D1F00F7AC34 /* Frameworks */,
+				A54883DD28AE9D1F00F7AC34 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hvftool;
+			productName = "hv-test";
+			productReference = A54883DF28AE9D1F00F7AC34 /* hvftool */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A54883D728AE9D1F00F7AC34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A53E0A2828C23E12001F6566 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					A54883DE28AE9D1F00F7AC34 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A54883DA28AE9D1F00F7AC34 /* Build configuration list for PBXProject "hvftool" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A54883D628AE9D1F00F7AC34;
+			productRefGroup = A54883E028AE9D1F00F7AC34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A54883DE28AE9D1F00F7AC34 /* hvftool */,
+				A53E0A2828C23E12001F6566 /* fdtlib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A54883DB28AE9D1F00F7AC34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A50062A428F415B2004D6362 /* gic-v3.c in Sources */,
+				A54ACFBC28D33374001E912A /* fdt.c in Sources */,
+				A53E0A4228C5DE5A001F6566 /* ram.c in Sources */,
+				A54ACFBA28D32852001E912A /* hostcpu.c in Sources */,
+				A59BA03C28C0D2B10078337B /* backends.c in Sources */,
+				A58C685E28CB3160001F7455 /* sysinfo.c in Sources */,
+				A59BA01028BFBE960078337B /* vobjects-db.c in Sources */,
+				A59BA04028C104CD0078337B /* stdio.c in Sources */,
+				A5FA420728C7A02000233CFB /* cfi-flash-operations.c in Sources */,
+				A5D0140028C611E30011BBC1 /* hostmem.c in Sources */,
+				A56AB39028CC91D600808445 /* fxied-clock.c in Sources */,
+				A59BA00428BFB4EE0078337B /* pl011.c in Sources */,
+				A58C686128CB579E001F7455 /* cpu.c in Sources */,
+				A53E0A4428C5E4F8001F6566 /* mapped-file.c in Sources */,
+				A52DFA1928CF309E002E85F9 /* vobject.c in Sources */,
+				A59BA00D28BFBBAB0078337B /* mmio.c in Sources */,
+				A59850B728B8E592007CC0E1 /* vmm.c in Sources */,
+				A5425D83298BFECC0034FA8D /* secure_ram.c in Sources */,
+				A5E25CA428C8F7D100375AC8 /* psci.c in Sources */,
+				A59BA03A28C0A1CF0078337B /* pipe.c in Sources */,
+				A59BA04628C1688A0078337B /* vcore_run.c in Sources */,
+				A5375D4F28CF986F00AE59CD /* parameters.c in Sources */,
+				A59BA04328C1664E0078337B /* vcore_debuging.c in Sources */,
+				A59BA00A28BFB7070078337B /* factories-db.c in Sources */,
+				A59850B128B8D8F6007CC0E1 /* loader.c in Sources */,
+				A54883E328AE9D1F00F7AC34 /* main.c in Sources */,
+				A56B36C828C65FF400199ECE /* cfi-flash.c in Sources */,
+				A5E25CA728C8F97F00375AC8 /* smc.c in Sources */,
+				A59850BA28BAA0E6007CC0E1 /* vcore.c in Sources */,
+				A5B9B05F28B7559600F28286 /* vcore_info.c in Sources */,
+				A5425D86298D159D0034FA8D /* vcore_emulate.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A53E0A2A28C23E12001F6566 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A53E0A2B28C23E12001F6566 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A54883E428AE9D1F00F7AC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A54883E528AE9D1F00F7AC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A54883E728AE9D1F00F7AC34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hvftool/hvftool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"__arm64__=1",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../dtcx/libfdt";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../dtcx/libfdt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A54883E828AE9D1F00F7AC34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = hvftool/hvftool.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				ENABLE_HARDENED_RUNTIME = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "__arm64__=1";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../dtcx/libfdt";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/../dtcx/libfdt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A53E0A2928C23E12001F6566 /* Build configuration list for PBXLegacyTarget "fdtlib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A53E0A2A28C23E12001F6566 /* Debug */,
+				A53E0A2B28C23E12001F6566 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54883DA28AE9D1F00F7AC34 /* Build configuration list for PBXProject "hvftool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54883E428AE9D1F00F7AC34 /* Debug */,
+				A54883E528AE9D1F00F7AC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54883E628AE9D1F00F7AC34 /* Build configuration list for PBXNativeTarget "hvftool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A54883E728AE9D1F00F7AC34 /* Debug */,
+				A54883E828AE9D1F00F7AC34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A54883D728AE9D1F00F7AC34 /* Project object */;
+}
